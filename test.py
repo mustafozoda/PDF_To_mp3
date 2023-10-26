@@ -1,6 +1,9 @@
 import PyPDF2
 from gtts import gTTS
 
+
+
+
 # Function to extract text from a PDF file
 def extract_text_from_pdf(pdf_path):
     text = ""
@@ -14,10 +17,16 @@ def extract_text_from_pdf(pdf_path):
     pdf_file.close()
     return text
 
+
+
+
 # Function to convert text to speech and save it as an MP3 file
 def text_to_mp3(text, mp3_file):
-    tts = gTTS(text, lang='ru')
+    tts = gTTS(text, lang='en')
     tts.save(mp3_file)
+
+
+
 
 # Main function
 if __name__ == "__main__":
