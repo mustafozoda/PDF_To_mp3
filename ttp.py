@@ -27,4 +27,4 @@ if __name__ == "__main__":
     text = pdf_to_text(pdf_link)
     text_to_mp3(text, mp3_file)
 
-    print(f"Well done, Your mp3 file is ready")
+    print(f"Conversion completed. MP3 file saved as {mp3_file}")
